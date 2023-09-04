@@ -1,0 +1,21 @@
+body {
+    font-family: helvetica, sans-serif;
+    width: 350px;    
+    display: block;
+}
+
+label {
+    font-weight: bold;
+}
+
+#customname {
+    height: 25px;
+    padding-right: 1px;
+}
+
+.story {
+    visibility: hidden;
+    text-align: justify;
+    background-color: #ffc125;
+    padding: 10px;
+}
