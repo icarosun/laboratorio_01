@@ -4,9 +4,9 @@ const customName = document.getElementById("customname");
 const randomize = document.querySelector(".randomize");
 const story = document.querySelector(".story");
 
-// valor do dollar no dia 03/09/2023 em relação ao real
+// valor do dollar no dia 04/09/2023 em relação ao real
 //real / dollar
-const dollar = 1 / 4.98;
+const dollar = 1 / 4.92;
 
 function randomValueFromArray(array) {
     const random = Math.floor(Math.random()*array.length);
@@ -14,15 +14,15 @@ function randomValueFromArray(array) {
 }
 
 let stories = [
-    ":jogador foi contratado pelo :time por um valor de R$ 10000 mil reais, para jogar a :competição. A torcida elogia o diretor do Flamengo, Bob. E grita o nome dele no Maracanã.",
-    "Bob faz um pênalti no melhor jogador do mundo, :jogador. Ele acerta e o :time ganha a :competição com um prêmio de R$ 10000 mil reais"
-]
+    "Na final :league, Bob comete um pênalti contra o melhor jogador do mundo, :player, que se prepara para cobrar. Bob se redime ao fazer uma defesa incrível, inspirando o :team a marcar o gol da vitória e conquistar o título, além de um prêmio de R$ 10000 mil reais! Bob se torna o herói do dia.",
+    "O jogador estrela, :player, foi contratado pelo :team por um contrato impressionante de R$ 10000 mil reais, tornando-se o herói dos torcedores. A jogada audaciosa do diretor Bob, que investiu na promessa de sucesso, provou-se acertada. No Maracanã, os torcedores, gratos pelo êxito da contratação, entoavam o nome de Bob, demonstrando sua devoção tanto ao diretor quanto ao talentoso jogador.",
+];
 
-let players = [ "Messi", "CR7", "Ronaldinho"]
+let players = [ "Messi", "CR7", "Ronaldinho"];
 
-let teams = ["Flamengo", "Manaus FC", "Pysandu"]
+let teams = ["Flamengo", "Manaus FC", "Pysandu"];
 
-let leagues = ["Mundial", "Libertadores", "Copa do Brasil"]
+let leagues = ["Mundial", "Libertadores", "Copa do Brasil"];
 
 randomize.addEventListener('click', result);
 
@@ -32,18 +32,23 @@ function result() {
 
     if(customName.value !== "") {
         const name = customName.value;
-        newStory = newStory.replace("Bob", name);
+        newStory = newStory.replaceAll("Bob", name);
     }
 
     if(document.getElementById("dollar").checked) {
         const price = dollar * 10000;
-        console.log(price);
-        newStory = newStory.replace("R$ 10000 mil reais", "US$ " + price + " mil dólares");
+
+        newStory = newStory.replace("R$ 10000 mil reais", "US$ " + price.toFixed(2) + " mil dólares");
     }
 
-    // let player = randomValueFromArray(players);
-    // let team = randomValueFromArray(teams);
-    // let league = randomValueFromArray(leagues);
+    let player = randomValueFromArray(players);
+    newStory = newStory.replace(":player", player)
+
+    let team = randomValueFromArray(teams);
+    newStory = newStory.replace(":team", team);
+
+    let league = randomValueFromArray(leagues);
+    newStory = newStory.replace(":league", league);
 
     story.textContent = newStory;
     story.getElementsByClassName.visibility = "visible";
