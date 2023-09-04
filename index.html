@@ -7,22 +7,22 @@
     </head>
 
     <body>
-        <form>
-            <label for = "name">Enter custom name:</label>
-            <input type = "text" id = "name" name = "name">
+        <label for = "customname">Enter custom name:</label>
+        <input type = "text" id = "customname" name = "name">
 
-            <br/><br/>
+        <br/><br/>
 
-            <label for = "team_cap">Team CAP</label>
-            <input type = "radio" id = "team_cap" name = "team" value = "team_cap" checked>
-            <label for = "team_iron">Team Iron Man</label>
-            <input type = "radio" id = "team_iron" name = "team" value = "team_iron">
+        <label for = "real">Real</label>
+        <input type = "radio" id = "real" name = "currency" value = "rs" checked>
+        <label for = "dollar">Dollar</label>
+        <input type = "radio" id = "dollar" name = "currency" value = "us">
 
-            <br/><br/>
+        <br/><br/>
 
-            <button>Generate random story</button>
-        </form>
+        <button class = "randomize">Generate random story</button>  
 
         <p class = "story"></p>
+
+        <script type = "text/javascript" src = "js/main.js"></script>
     </body>
 </html>
