@@ -18,7 +18,7 @@ let stories = [
     "O jogador estrela, :player, foi contratado pelo :team por um contrato impressionante de R$ 10000 mil reais, tornando-se o herói dos torcedores. A jogada audaciosa do diretor Bob, que investiu na promessa de sucesso, provou-se acertada. No Maracanã, os torcedores, gratos pelo êxito da contratação, entoavam o nome de Bob, demonstrando sua devoção tanto ao diretor quanto ao talentoso jogador.",
 ];
 
-let players = [ "Messi", "CR7", "Ronaldinho"];
+let players = ["Messi", "CR7", "Ronaldinho"];
 
 let teams = ["Flamengo", "Manaus FC", "Pysandu"];
 
@@ -51,5 +51,5 @@ function result() {
     newStory = newStory.replace(":league", league);
 
     story.textContent = newStory;
-    story.getElementsByClassName.visibility = "visible";
+    story.style.visibility = "visible";
 }
