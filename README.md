@@ -1,7 +1,8 @@
 # laboratorio - 01 
 
 >Professor: Moisés Gomes de Carvalho
-Aluno: Ícaro Santos Pereira
+>
+>Aluno: Ícaro Santos Pereira
 
 
 Repositório criado para desenvolver a atividade 01 da disciplina de javascript [WACAD003] da capacitação e desenvolvimento em Web Full Stack, ![WebAcademy](https://webacademy.icomp.ufam.edu.br/).
