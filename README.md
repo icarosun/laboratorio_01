@@ -5,7 +5,7 @@
 >Aluno: Ícaro Santos Pereira
 
 
-Repositório criado para desenvolver a atividade 01 da disciplina de javascript [WACAD003] da capacitação e desenvolvimento em Web Full Stack, ![WebAcademy](https://webacademy.icomp.ufam.edu.br/).
+Repositório criado para desenvolver a atividade 01 da disciplina de javascript [WACAD003] da capacitação e desenvolvimento em Web Full Stack, [WebAcademy](https://webacademy.icomp.ufam.edu.br/).
 
 - [Javascript](./js/main.js)
 - [HTML](./index.html)
