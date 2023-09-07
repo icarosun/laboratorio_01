@@ -1,4 +1,4 @@
-# Laboratorio - 01 
+# Laboratório - 01 
 
 >Professor: Moisés Gomes de Carvalho
 >
