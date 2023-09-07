@@ -1,4 +1,4 @@
-# Laboratório - 01 
+# Laboratório - 01: Gerador de histórias aleatórias
 
 >Professor: Moisés Gomes de Carvalho
 >
